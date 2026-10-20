@@ -5,488 +5,914 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#101414">
-<meta name="description" content="Competitive Marketing builds professional websites for Australian small businesses. Explore our work and request a free website consultation.">
-<title>Competitive Marketing | Websites for Australian Businesses</title>
+<meta name="description" content="Competitive Marketing creates professional websites for Australian small businesses. Get a free website consultation.">
+<title>Competitive Marketing | Websites That Work</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 <style>
 :root{
- --dark:#101414;
- --panel:#1b2221;
- --mint:#b6f2cf;
- --cream:#f5f6f2;
- --white:#fff;
- --muted:#a6b4ae;
- --ink:#19221e;
- --line:#dfe6e0;
- --max:1160px;
+--dark:#101414;
+--panel:#1b2420;
+--mint:#b6f2cf;
+--green:#236d42;
+--cream:#f5f6f2;
+--white:#ffffff;
+--ink:#19221e;
+--muted:#65736b;
+--line:#dfe6e0;
+--max:1160px;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
 body{
- margin:0;
- font-family:"DM Sans",sans-serif;
- background:var(--cream);
- color:var(--ink);
+margin:0;
+font-family:"DM Sans",sans-serif;
+background:var(--cream);
+color:var(--ink);
 }
 h1,h2,h3,p{margin-top:0}
 h1,h2,h3{
- font-family:Outfit,sans-serif;
- letter-spacing:-.04em;
+font-family:Outfit,sans-serif;
+letter-spacing:-.04em;
 }
 a{text-decoration:none;color:inherit}
 button,input,select,textarea{font:inherit}
 button{cursor:pointer}
 .container{
- width:min(var(--max),calc(100% - 40px));
- margin:auto;
+width:min(var(--max),calc(100% - 36px));
+margin:auto;
 }
 header{
- background:var(--dark);
- color:white;
- border-bottom:1px solid #303b35;
+background:var(--dark);
+color:white;
+border-bottom:1px solid #303b35;
+position:relative;
+z-index:10;
 }
 .nav{
- min-height:80px;
- display:flex;
- align-items:center;
- justify-content:space-between;
- gap:20px;
+min-height:78px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:18px;
 }
 .brand{
- font-family:Outfit,sans-serif;
- font-size:20px;
- font-weight:800;
- letter-spacing:-.04em;
+font-family:Outfit,sans-serif;
+font-size:20px;
+font-weight:900;
+letter-spacing:-.045em;
 }
 .brand span{color:var(--mint)}
 .navlinks{
- display:flex;
- align-items:center;
- gap:24px;
- font-size:13px;
+display:flex;
+align-items:center;
+gap:25px;
+font-size:13px;
+font-weight:700;
 }
 .btn{
- display:inline-flex;
- justify-content:center;
- align-items:center;
- text-align:center;
- padding:15px 23px;
- border-radius:9px;
- background:var(--mint);
- color:var(--dark);
- font-weight:800;
- border:1px solid transparent;
- transition:.2s;
+display:inline-flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:15px 23px;
+border-radius:9px;
+background:var(--mint);
+color:var(--dark);
+font-weight:800;
+border:1px solid transparent;
+transition:.2s;
 }
 .btn:hover{
- transform:translateY(-2px);
- background:#d0ffe2;
+transform:translateY(-2px);
+background:#d0ffe2;
 }
 .btn-outline{
- background:transparent;
- color:white;
- border-color:#65746b;
+background:transparent;
+color:white;
+border-color:#65746b;
 }
 .btn-outline:hover{
- background:#28332d;
- color:white;
+background:#28332d;
+color:white;
 }
 .hero{
- background:var(--dark);
- color:white;
- padding:100px 0 105px;
- position:relative;
- overflow:hidden;
+background:var(--dark);
+color:white;
+padding:105px 0 110px;
+position:relative;
+overflow:hidden;
 }
 .hero:before{
- content:"";
- position:absolute;
- width:500px;height:500px;
- border-radius:50%;
- background:#367b56;
- filter:blur(150px);
- opacity:.22;
- right:-150px;
- top:0;
- pointer-events:none;
+content:"";
+position:absolute;
+width:500px;
+height:500px;
+border-radius:50%;
+background:#367b56;
+filter:blur(145px);
+opacity:.22;
+right:-150px;
+top:0;
+pointer-events:none;
 }
 .hero-inner{
- position:relative;
- max-width:850px;
+position:relative;
+max-width:850px;
 }
 .eyebrow{
- display:inline-block;
- color:var(--mint);
- font-weight:800;
- font-size:12px;
- letter-spacing:.16em;
- text-transform:uppercase;
- margin-bottom:22px;
+display:inline-block;
+color:var(--mint);
+font-weight:800;
+font-size:12px;
+letter-spacing:.16em;
+text-transform:uppercase;
+margin-bottom:22px;
 }
 h1{
- font-size:clamp(46px,7.5vw,88px);
- line-height:1.04;
- margin-bottom:26px;
+font-size:clamp(44px,7.5vw,88px);
+line-height:1.04;
+margin-bottom:26px;
 }
 .hero h1 em{
- color:var(--mint);
- font-style:normal;
+color:var(--mint);
+font-style:normal;
 }
 .hero p{
- font-size:18px;
- line-height:1.8;
- color:#c3cdc7;
- max-width:650px;
+font-size:18px;
+line-height:1.8;
+color:#c3cdc7;
+max-width:650px;
 }
 .actions{
- display:flex;
- flex-wrap:wrap;
- gap:12px;
- margin-top:32px;
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-top:32px;
 }
 .hero-note{
- color:var(--muted);
- font-size:12px;
- margin-top:24px;
+color:#a6b4ae;
+font-size:12px;
+margin-top:24px;
 }
 section{padding:85px 0}
 .section-head{
- max-width:700px;
- margin-bottom:36px;
+max-width:700px;
+margin-bottom:36px;
 }
 .kicker{
- font-size:12px;
- font-weight:800;
- letter-spacing:.14em;
- text-transform:uppercase;
- color:#367952;
- margin-bottom:12px;
+font-size:12px;
+font-weight:800;
+letter-spacing:.14em;
+text-transform:uppercase;
+color:#367952;
+margin-bottom:12px;
 }
 h2{
- font-size:clamp(34px,4.5vw,55px);
- line-height:1.12;
- margin-bottom:16px;
+font-size:clamp(34px,4.5vw,55px);
+line-height:1.12;
+margin-bottom:16px;
 }
 .section-head p{
- color:#65736b;
- line-height:1.8;
+color:var(--muted);
+line-height:1.8;
 }
 .grid{
- display:grid;
- grid-template-columns:repeat(3,1fr);
- gap:20px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
 }
 .service,.work-card,.step{
- background:white;
- border:1px solid var(--line);
- border-radius:16px;
- overflow:hidden;
+background:white;
+border:1px solid var(--line);
+border-radius:16px;
+overflow:hidden;
 }
 .service{padding:30px}
 .service .num{
- font-family:Outfit,sans-serif;
- color:#39895b;
- font-size:14px;
- font-weight:800;
+font-family:Outfit,sans-serif;
+color:#39895b;
+font-size:14px;
+font-weight:800;
 }
-.service h3{font-size:24px;margin:18px 0 10px}
+.service h3{
+font-size:24px;
+margin:18px 0 10px;
+}
 .service p,.step p{
- color:#69776e;
- line-height:1.75;
- font-size:14px;
- margin:0;
+color:#69776e;
+line-height:1.75;
+font-size:14px;
+margin:0;
 }
 .portfolio{background:#eaf0e9}
 .work-preview{
- height:205px;
- background:#192c25;
- display:flex;
- flex-direction:column;
- align-items:center;
- justify-content:center;
- padding:25px;
- text-align:center;
- color:white;
- position:relative;
- overflow:hidden;
+height:205px;
+background:#192c25;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+padding:25px;
+text-align:center;
+color:white;
+position:relative;
+overflow:hidden;
 }
 .work-preview:after{
- content:"";
- position:absolute;
- width:180px;height:180px;
- background:#8bd9a7;
- border-radius:50%;
- filter:blur(80px);
- opacity:.3;
- right:-40px;bottom:-90px;
+content:"";
+position:absolute;
+width:180px;
+height:180px;
+background:#8bd9a7;
+border-radius:50%;
+filter:blur(80px);
+opacity:.3;
+right:-40px;
+bottom:-90px;
 }
 .work-preview .small{
- font-size:10px;
- letter-spacing:.15em;
- text-transform:uppercase;
- color:#a6e7c1;
+font-size:10px;
+letter-spacing:.15em;
+text-transform:uppercase;
+color:#a6e7c1;
 }
 .work-preview strong{
- font-family:Outfit,sans-serif;
- font-size:29px;
- line-height:1.1;
- margin-top:12px;
- position:relative;
- z-index:1;
+font-family:Outfit,sans-serif;
+font-size:29px;
+line-height:1.1;
+margin-top:12px;
+position:relative;
+z-index:1;
 }
 .work-card:nth-child(2) .work-preview{
- background:#333b2c;
+background:#333b2c;
 }
 .work-card:nth-child(3) .work-preview{
- background:#293438;
+background:#293438;
 }
 .work-content{padding:24px}
-.work-content h3{font-size:22px;margin-bottom:8px}
+.work-content h3{
+font-size:22px;
+margin-bottom:8px;
+}
 .work-content p{
- color:#66736b;
- font-size:13px;
- line-height:1.7;
+color:#66736b;
+font-size:13px;
+line-height:1.7;
 }
 .work-content a{
- font-weight:800;
- font-size:13px;
- color:#287a48;
+font-weight:800;
+font-size:13px;
+color:#287a48;
 }
 .process{background:white}
 .step{padding:28px}
 .step .circle{
- width:45px;height:45px;
- display:grid;
- place-items:center;
- border-radius:50%;
- background:#e3f5e9;
- color:#267443;
- font-weight:800;
- margin-bottom:20px;
+width:45px;
+height:45px;
+display:grid;
+place-items:center;
+border-radius:50%;
+background:#e3f5e9;
+color:#267443;
+font-weight:800;
+margin-bottom:20px;
 }
 .step h3{font-size:21px}
 .cta-section{
- background:var(--dark);
- color:white;
+background:var(--dark);
+color:white;
 }
 .cta-layout{
- display:grid;
- grid-template-columns:.9fr 1.1fr;
- gap:65px;
- align-items:start;
+display:grid;
+grid-template-columns:.9fr 1.1fr;
+gap:65px;
+align-items:start;
 }
 .cta-copy p{
- color:#b8c8be;
- line-height:1.8;
+color:#b8c8be;
+line-height:1.8;
 }
 .cta-copy ul{
- padding-left:20px;
- line-height:2.2;
- color:#c4d5ca;
+padding-left:20px;
+line-height:2.2;
+color:#c4d5ca;
 }
 .form-card{
- background:white;
- color:var(--ink);
- padding:35px;
- border-radius:18px;
+background:white;
+color:var(--ink);
+padding:35px;
+border-radius:18px;
 }
 .form-card h3{font-size:27px}
 .form-card p{
- color:#66746c;
- font-size:13px;
- line-height:1.7;
+color:#66746c;
+font-size:13px;
+line-height:1.7;
 }
 .field{margin:17px 0}
 .field label{
- display:block;
- font-size:12px;
- font-weight:800;
- margin-bottom:8px;
+display:block;
+font-size:12px;
+font-weight:800;
+margin-bottom:8px;
 }
 .field input,.field select,.field textarea{
- width:100%;
- border:1px solid #d9e2da;
- border-radius:8px;
- padding:13px;
- background:#f9fbf8;
- color:var(--ink);
- outline:none;
+width:100%;
+border:1px solid #d9e2da;
+border-radius:8px;
+padding:13px;
+background:#f9fbf8;
+color:var(--ink);
+outline:none;
 }
-.field input:focus,.field select:focus,
+.field input:focus,
+.field select:focus,
 .field textarea:focus{
- border-color:#398b5a;
+border-color:#398b5a;
 }
-.field textarea{min-height:95px;resize:vertical}
+.field textarea{
+min-height:95px;
+resize:vertical;
+}
 .submit{
- width:100%;
- border:0;
- padding:16px;
- border-radius:9px;
- background:#1e6d40;
- color:white;
- font-weight:800;
+width:100%;
+border:0;
+padding:16px;
+border-radius:9px;
+background:#1e6d40;
+color:white;
+font-weight:800;
+transition:.2s;
 }
 .submit:hover{background:#165732}
+.submit:disabled{
+opacity:.65;
+cursor:wait;
+}
 .disclaimer{
- font-size:11px!important;
- margin:14px 0 0;
+font-size:11px!important;
+margin:14px 0 0;
+}
+.form-status{
+display:none;
+margin-top:18px;
+padding:16px;
+border-radius:9px;
+font-size:14px;
+line-height:1.6;
+}
+.form-status.success{
+display:block;
+background:#e5f6e9;
+color:#185e34;
+}
+.form-status.error{
+display:block;
+background:#fff0ed;
+color:#9b3426;
+}
+.contact-options{
+margin-top:32px;
+display:flex;
+flex-direction:column;
+gap:14px;
+}
+.contact-options a{
+color:var(--mint);
+font-weight:700;
+overflow-wrap:anywhere;
 }
 footer{
- background:#0b0f0d;
- color:#9aaa9f;
- padding:34px 0;
- font-size:12px;
+background:#0b0f0d;
+color:#9aaa9f;
+padding:34px 0;
+font-size:12px;
 }
 .footer-inner{
- display:flex;
- justify-content:space-between;
- flex-wrap:wrap;
- gap:20px;
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:20px;
 }
 footer strong{color:white}
+footer a{color:var(--mint)}
 @media(max-width:800px){
- .grid{grid-template-columns:1fr}
- .cta-layout{grid-template-columns:1fr;gap:30px}
- .navlinks a:not(.btn){display:none}
- .hero{padding:75px 0 85px}
- section{padding:65px 0}
- .work-preview{height:180px}
+.grid{grid-template-columns:1fr}
+.cta-layout{grid-template-columns:1fr;gap:30px}
+.navlinks a:not(.btn){display:none}
+.hero{padding:75px 0 85px}
+section{padding:65px 0}
+.work-preview{height:180px}
 }
 @media(max-width:480px){
- .container{width:calc(100% - 32px)}
- .brand{font-size:17px}
- .nav{min-height:72px}
- .nav .btn{padding:11px;font-size:11px}
- .hero p{font-size:16px}
- .actions .btn{width:100%}
- .form-card{padding:23px}
+.container{width:calc(100% - 32px)}
+.brand{font-size:16px}
+.nav{min-height:72px}
+.nav .btn{
+padding:11px;
+font-size:11px;
+}
+.hero p{font-size:16px}
+.actions .btn{width:100%}
+.form-card{padding:23px}
 }
 </style>
 </head>
+
 <body>
+
 <header>
- <div class="container nav">
-  <a class="brand" href="#">
-   COMPETITIVE<span> MARKETING.</span>
-  </a>
-  <nav class="navlinks" aria-label="Main navigation">
-   <a href="#services">Services</a>
-   <a href="#portfolio">Our Work</a>
-   <a class="btn" href="#contact">Free Consultation</a>
-  </nav>
- </div>
+<div class="container nav">
+<a class="brand" href="#">
+COMPETITIVE<span> MARKETING.</span>
+</a>
+<nav class="navlinks" aria-label="Main navigation">
+<a href="#services">Services</a>
+<a href="#portfolio">Our Work</a>
+<a class="btn" href="#contact">Free Consultation</a>
+</nav>
+</div>
 </header>
 
 <main>
+
 <section class="hero">
- <div class="container hero-inner">
-  <span class="eyebrow">
-   Website Design for Australian Businesses
-  </span>
-  <h1>
-   Your business deserves
-   a website that <em>works.</em>
-  </h1>
-  <p>
-   We create professional, mobile-friendly
-   websites that help Australian small
-   businesses showcase their work,
-   build trust and turn visitors into enquiries.
-  </p>
-  <div class="actions">
-   <a class="btn" href="#contact">
-    Get a Free Consultation →
-   </a>
-   <a class="btn btn-outline" href="#portfolio">
-    Explore Our Work
-   </a>
-  </div>
-  <div class="hero-note">
-   No obligation. No pushy sales.
-   Just a conversation about your business.
-  </div>
- </div>
+<div class="container hero-inner">
+<span class="eyebrow">
+Website Design for Australian Businesses
+</span>
+
+<h1>
+Your business deserves
+a website that <em>works.</em>
+</h1>
+
+<p>
+We create professional, mobile-friendly websites
+that help Australian small businesses showcase
+their work, build trust and turn visitors into enquiries.
+</p>
+
+<div class="actions">
+<a class="btn" href="#contact">
+Get a Free Consultation →
+</a>
+<a class="btn btn-outline" href="#portfolio">
+Explore Our Work
+</a>
+</div>
+
+<div class="hero-note">
+No obligation. No pushy sales.
+Just a conversation about your business.
+</div>
+</div>
 </section>
 
 <section id="services">
- <div class="container">
-  <div class="section-head">
-   <div class="kicker">What We Do</div>
-   <h2>Make a stronger first impression.</h2>
-   <p>
-    Your website should make it easy for
-    potential customers to understand what
-    you offer and get in touch.
-   </p>
-  </div>
-  <div class="grid">
-   <article class="service">
-    <span class="num">01 / DESIGN</span>
-    <h3>Professional Websites</h3>
-    <p>
-     Modern designs tailored to your
-     business, services and brand identity.
-    </p>
-   </article>
-   <article class="service">
-    <span class="num">02 / EXPERIENCE</span>
-    <h3>Mobile-Friendly Design</h3>
-    <p>
-     A smooth experience across phones,
-     tablets and desktop computers.
-    </p>
-   </article>
-   <article class="service">
-    <span class="num">03 / ENQUIRIES</span>
-    <h3>Clear Contact Options</h3>
-    <p>
-     Calls to action and enquiry options
-     that make contacting your business simple.
-    </p>
-   </article>
-  </div>
- </div>
+<div class="container">
+
+<div class="section-head">
+<div class="kicker">What We Do</div>
+<h2>Make a stronger first impression.</h2>
+<p>
+Your website should make it easy for potential
+customers to understand what you offer and get in touch.
+</p>
+</div>
+
+<div class="grid">
+
+<article class="service">
+<span class="num">01 / DESIGN</span>
+<h3>Professional Websites</h3>
+<p>
+Modern designs tailored to your business,
+services and brand identity.
+</p>
+</article>
+
+<article class="service">
+<span class="num">02 / EXPERIENCE</span>
+<h3>Mobile-Friendly Design</h3>
+<p>
+A smooth experience across phones,
+tablets and desktop computers.
+</p>
+</article>
+
+<article class="service">
+<span class="num">03 / ENQUIRIES</span>
+<h3>Clear Contact Options</h3>
+<p>
+Calls to action and enquiry options
+that make contacting your business simple.
+</p>
+</article>
+
+</div>
+</div>
 </section>
 
 <section class="portfolio" id="portfolio">
- <div class="container">
-  <div class="section-head">
-   <div class="kicker">Our Portfolio</div>
-   <h2>See what's possible.</h2>
-   <p>
-    Explore demonstration websites
-    created for Australian service businesses.
-    These examples showcase our design approach.
-   </p>
-  </div>
-  <div class="grid">
-   <article class="work-card">
-    <div class="work-preview">
-     <span class="small">Gardening Website Demo</span>
-     <strong>Nathan's<br>Gardening Co.</strong>
-    </div>
-    <div class="work-content">
-     <h3>Garden Care</h3>
-     <p>
-      A service-focused website designed
-      to showcase gardening work.
-     </p>
-     <a target="_blank" rel="noopener"
-      href="https://competitivemarketing.github.io/Nathans-gardening-co/">
-      Explore Demo ↗
-     </a>
-    </div>
-   </article>
+<div class="container">
 
-   <article class="work-card">
-    <div class="work-preview">
-     <span class="small">Landscaping Website Demo</span>
-     <strong>D & L<br>Landscaping</strong>
-    </div>
-    <div class="work-content">
-     <h3>Landscaping</h3>
+<div class="section-head">
+<div class="kicker">Our Portfolio</div>
+<h2>See what's possible.</h2>
+<p>
+Explore demonstration websites created
+for Australian service businesses.
+These examples showcase our design approach.
+</p>
+</div>
+
+<div class="grid">
+
+<article class="work-card">
+<div class="work-preview">
+<span class="small">Gardening Website Demo</span>
+<strong>Nathan's<br>Gardening Co.</strong>
+</div>
+<div class="work-content">
+<h3>Garden Care</h3>
+<p>
+A service-focused website designed
+to showcase gardening work.
+</p>
+<a target="_blank" rel="noopener noreferrer"
+href="https://competitivemarketing.github.io/Nathans-gardening-co/">
+Explore Demo ↗
+</a>
+</div>
+</article>
+
+<article class="work-card">
+<div class="work-preview">
+<span class="small">Landscaping Website Demo</span>
+<strong>D & L<br>Landscaping</strong>
+</div>
+<div class="work-content">
+<h3>Landscaping</h3>
+<p>
+Professional presentation for
+a landscaping business.
+</p>
+<a target="_blank" rel="noopener noreferrer"
+href="https://competitivemarketing.github.io/D-L-Landscaping-Solutions/">
+Explore Demo ↗
+</a>
+</div>
+</article>
+
+<article class="work-card">
+<div class="work-preview">
+<span class="small">Service Website Demo</span>
+<strong>Sunset Pest<br>& Rural Services</strong>
+</div>
+<div class="work-content">
+<h3>Rural Services</h3>
+<p>
+A website concept for a regional
+Australian service business.
+</p>
+<a target="_blank" rel="noopener noreferrer"
+href="https://competitivemarketing.github.io/Sunset-Pest-Rural-Services/">
+Explore Demo ↗
+</a>
+</div>
+</article>
+
+</div>
+</div>
+</section>
+
+<section class="process">
+<div class="container">
+
+<div class="section-head">
+<div class="kicker">How It Works</div>
+<h2>Simple from the start.</h2>
+</div>
+
+<div class="grid">
+
+<article class="step">
+<div class="circle">1</div>
+<h3>Tell us about your business</h3>
+<p>
+Share what you do and what you
+want from your website.
+</p>
+</article>
+
+<article class="step">
+<div class="circle">2</div>
+<h3>Discuss your options</h3>
+<p>
+We'll talk through a suitable design
+and the scope of your project.
+</p>
+</article>
+
+<article class="step">
+<div class="circle">3</div>
+<h3>Get a proposal</h3>
+<p>
+If we're a good fit, we'll provide
+a quote and next steps.
+</p>
+</article>
+
+</div>
+</div>
+</section>
+
+<section class="cta-section" id="contact">
+<div class="container cta-layout">
+
+<div class="cta-copy">
+<div class="eyebrow">Let's Talk</div>
+
+<h2>
+Ready to make your business stand out?
+</h2>
+
+<p>
+Whether you're starting from scratch
+or want to improve an existing website,
+we'd love to hear what you're working on.
+</p>
+
+<ul>
+<li>Free initial consultation</li>
+<li>Websites built around your business</li>
+<li>Clear proposals and project scope</li>
+<li>No obligation to proceed</li>
+</ul>
+
+<div class="contact-options">
+<a href="mailto:competitive.marketing@outlook.com">
+competitive.marketing@outlook.com
+</a>
+<a href="tel:+61499977747">
+0499 977 747
+</a>
+</div>
+
+</div>
+
+<div class="form-card">
+
+<h3>Request a Free Consultation</h3>
+
+<p>
+Tell us a little about your business.
+We'll review your enquiry and get back to you.
+</p>
+
+<form
+id="leadForm"
+action="https://formspree.io/f/xyekwoyk"
+method="POST"
+>
+
+<input type="hidden"
+name="_subject"
+value="New Competitive Marketing Website Lead">
+
+<input type="hidden"
+name="source"
+value="Competitive Marketing Landing Page">
+
+<div class="field">
+<label for="business">Business Name *</label>
+<input
+id="business"
+name="business"
+required
+maxlength="100"
+autocomplete="organization"
+placeholder="Your business name">
+</div>
+
+<div class="field">
+<label for="name">Your Name *</label>
+<input
+id="name"
+name="name"
+required
+maxlength="100"
+autocomplete="name"
+placeholder="Your name">
+</div>
+
+<div class="field">
+<label for="email">Email Address *</label>
+<input
+id="email"
+name="email"
+type="email"
+required
+autocomplete="email"
+placeholder="you@example.com">
+</div>
+
+<div class="field">
+<label for="phone">Phone Number</label>
+<input
+id="phone"
+name="phone"
+type="tel"
+autocomplete="tel"
+placeholder="Your phone number">
+</div>
+
+<div class="field">
+<label for="website">Existing Website</label>
+<input
+id="website"
+name="website"
+placeholder="Website URL or none">
+</div>
+
+<div class="field">
+<label for="service">What do you need? *</label>
+<select id="service" name="service" required>
+<option value="">Select an option</option>
+<option value="Brand new website">
+Brand new website
+</option>
+<option value="Website redesign">
+Website redesign
+</option>
+<option value="Not sure yet">
+Not sure yet
+</option>
+</select>
+</div>
+
+<div class="field">
+<label for="budget">Approximate Budget</label>
+<select id="budget" name="budget">
+<option value="">Prefer not to say</option>
+<option>Under $750</option>
+<option>$750 - $1,500</option>
+<option>$1,500 - $3,000</option>
+<option>$3,000+</option>
+<option>Need guidance</option>
+</select>
+</div>
+
+<div class="field">
+<label for="timing">
+When are you looking to start?
+</label>
+<select id="timing" name="timing">
+<option value="">Not sure yet</option>
+<option>As soon as possible</option>
+<option>Within 30 days</option>
+<option>Within 3 months</option>
+<option>Just researching</option>
+</select>
+</div>
+
+<div class="field">
+<label for="message">
+Tell us about your project
+</label>
+<textarea
+id="message"
+name="message"
+maxlength="1500"
+placeholder="What does your business do? What would you like your website to achieve?"></textarea>
+</div>
+
+<button
+class="submit"
+id="submitBtn"
+type="submit">
+Send My Enquiry →
+</button>
+
+<div
+id="formStatus"
+class="form-status"
+role="status"
+aria-live="polite"></div>
+
+<p class="disclaimer">
+By submitting, you agree to be contacted
+by Competitive Marketing about your enquiry.
+Your details will only be used to respond
+to your request.
+</p>
+
+</form>
+</div>
+
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="container footer-inner">
+
+<div>
+<strong>COMPETITIVE MARKETING.</strong>
+<p>
+Professional websites for Australian businesses.
+</p>
+</div>
+
+<div>
+© <span id="year"></span> Competitive Marketing.
+<br>
+<a href="mailto:competitive.marketing@outlook.com">
+Get in touch
+</a>
+</div>
+
+</div>
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+const form = document.getElementById("leadForm");
+const submitBtn = document.getElementById("submitBtn");
+const formStatus = document.getElementById("formStatus");
+
+form.addEventListener("submit", async function(event){
+ event.preventDefault();
+
+ if(!form.reportValidity()) return;
+
+ submitBtn.disabled = true;
+ submitBtn.textContent = "Sending your enquiry...";
+
+ formStatus.className = "form-status";
+ formStatus.textContent = "";
+
+ try{
+  const formData = new FormData(form);
+
+  const response = await fetch(form.action,{
+   method:"POST",
+   body:formData,
+   headers:{
+    "Accept":"application/json"
+   }
+  });
+
+  if(response.ok){
+   formStatus.className = "form-status success";
+   formStatus.textContent =
+    "Thanks! Your enquiry has been sent successfully. We'll be in touch as soon as possible.";
+
+   form.reset();
+   formStatus.scrollIntoView({
+    behavior:"smooth",
+    block:"center"
+   });
+
+  }else{
+   let message = "We couldn't send your enquiry. Please try again or contact us directly.";
+
+   try{
+    const data = await response.json();
+    if(data.errors && data.errors.length){
+     message = data.errors
+      .map(error=>error.message)
+      .join(" ");
+    }
+   }catch(error){}
+
+   throw new Error(message);
+  }
+
+ }catch(error){
+  formStatus.className = "form-status error";
+  formStatus.textContent =
+   error.message ||
+   "Something went wrong. Please email competitive.marketing@outlook.com instead.";
+ }finally{
+  submitBtn.disabled = false;
+  submitBtn.textContent = "Send My Enquiry →";
+ }
+});
+</script>
+
+</body>
+</html>
+3>
      <p>
       Professional presentation
       for a landscaping business.
